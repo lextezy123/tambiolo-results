@@ -1,0 +1,37 @@
+name: Fetch lotto results
+
+on:
+  schedule:
+    # 9:47 PM and 11:37 PM Philippine time (UTC+8), every day
+    - cron: "47 13 * * *"
+    - cron: "37 15 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days to check (use 365 once to backfill history)"
+        default: "3"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/fetch_results.py --days "${{ github.event.inputs.days || '3' }}"
+      - name: Commit new results
+        run: |
+          if git diff --quiet data/; then
+            echo "Nothing new."
+          else
+            git config user.name "tambiolo-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "Update results $(date -u +%F)"
+            git push
+          fi
