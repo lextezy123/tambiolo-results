@@ -2,36 +2,52 @@ name: Fetch lotto results
 
 on:
   schedule:
-    # 9:47 PM and 11:37 PM Philippine time (UTC+8), every day
-    - cron: "47 13 * * *"
-    - cron: "37 15 * * *"
+    # Philippine time (UTC+8), every day. GMA often posts the night's results
+    # after midnight, so the morning runs catch anything the night runs missed.
+    # The afternoon runs pick up the 2 PM and 5 PM Swertres and EZ2 draws.
+    - cron: "47 13 * * *"   # 9:47 PM
+    - cron: "37 15 * * *"   # 11:37 PM
+    - cron: "23 17 * * *"   # 1:23 AM
+    - cron: "13 23 * * *"   # 7:13 AM
+    - cron: "43 3 * * *"    # 11:43 AM
+    - cron: "17 7 * * *"    # 3:17 PM
+    - cron: "23 10 * * *"   # 6:23 PM
   workflow_dispatch:
     inputs:
       days:
-        description: "Days to check (use 365 once to backfill history)"
+        description: "Days to check (use 1500 once to backfill about 4 years)"
         default: "3"
 
 permissions:
   contents: write
 
+concurrency:
+  group: fetch-results
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python scripts/fetch_results.py --days "${{ github.event.inputs.days || '3' }}"
+      - name: Check the parser
+        run: python -m unittest discover -s tests
+      - name: Fetch results
+        run: python scripts/fetch_results.py --days "${{ github.event.inputs.days || '3' }}"
       - name: Commit new results
         run: |
-          if git diff --quiet data/; then
+          if git diff --quiet data/ && [ -z "$(git status --porcelain data/)" ]; then
             echo "Nothing new."
           else
             git config user.name "tambiolo-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/
             git commit -m "Update results $(date -u +%F)"
+            git pull --rebase
             git push
           fi
