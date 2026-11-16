@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-16T10:33:42Z",
+ "updated": "2026-11-16T20:34:09Z",
  "draws": [
+  {"game": "2D", "date": "2026-11-16", "time": "9PM", "numbers": [23, 6], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-16", "time": "9PM", "numbers": [7, 9, 8], "prize": 4500.0},
+  {"game": "4D", "date": "2026-11-16", "time": "9PM", "numbers": [7, 4, 9, 3], "prize": 152946.0},
+  {"game": "2D", "date": "2026-11-16", "time": "5PM", "numbers": [19, 1], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-16", "time": "5PM", "numbers": [4, 8, 2], "prize": 4500.0},
+  {"game": "2D", "date": "2026-11-16", "time": "2PM", "numbers": [21, 18], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-16", "time": "2PM", "numbers": [5, 9, 5], "prize": 4500.0},
   {"game": "2D", "date": "2026-11-15", "time": "9PM", "numbers": [8, 27], "prize": 4000.0},
   {"game": "3D", "date": "2026-11-15", "time": "9PM", "numbers": [4, 4, 8], "prize": 4500.0},
   {"game": "2D", "date": "2026-11-15", "time": "5PM", "numbers": [29, 7], "prize": 4000.0},
@@ -799,12 +806,6 @@
   {"game": "2D", "date": "2026-07-20", "time": "5PM", "numbers": [18, 8], "prize": 4000.0},
   {"game": "3D", "date": "2026-07-20", "time": "5PM", "numbers": [0, 9, 3], "prize": 4500.0},
   {"game": "2D", "date": "2026-07-20", "time": "2PM", "numbers": [14, 3], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-20", "time": "2PM", "numbers": [4, 2, 0], "prize": 4500.0},
-  {"game": "2D", "date": "2026-07-19", "time": "9PM", "numbers": [19, 17], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-19", "time": "9PM", "numbers": [9, 8, 7], "prize": 4500.0},
-  {"game": "2D", "date": "2026-07-19", "time": "5PM", "numbers": [15, 28], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-19", "time": "5PM", "numbers": [6, 0, 8], "prize": 4500.0},
-  {"game": "2D", "date": "2026-07-19", "time": "2PM", "numbers": [3, 5], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-19", "time": "2PM", "numbers": [9, 0, 4], "prize": 4500.0}
+  {"game": "3D", "date": "2026-07-20", "time": "2PM", "numbers": [4, 2, 0], "prize": 4500.0}
  ]
 }
