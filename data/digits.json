@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-19T16:32:21Z",
+ "updated": "2026-11-20T16:06:25Z",
  "draws": [
+  {"game": "2D", "date": "2026-11-20", "time": "9PM", "numbers": [2, 2], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-20", "time": "9PM", "numbers": [5, 5, 4], "prize": 4500.0},
+  {"game": "4D", "date": "2026-11-20", "time": "9PM", "numbers": [2, 0, 9, 2], "prize": 34207.0},
+  {"game": "2D", "date": "2026-11-20", "time": "5PM", "numbers": [23, 22], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-20", "time": "5PM", "numbers": [8, 8, 1], "prize": 4500.0},
+  {"game": "2D", "date": "2026-11-20", "time": "2PM", "numbers": [4, 5], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-20", "time": "2PM", "numbers": [6, 7, 0], "prize": 4500.0},
   {"game": "2D", "date": "2026-11-19", "time": "9PM", "numbers": [1, 15], "prize": 4000.0},
   {"game": "3D", "date": "2026-11-19", "time": "9PM", "numbers": [2, 4, 4], "prize": 4500.0},
   {"game": "6D", "date": "2026-11-19", "time": "9PM", "numbers": [5, 8, 3, 2, 1, 9], "prize": 9422122.8},
@@ -799,13 +806,6 @@
   {"game": "2D", "date": "2026-07-24", "time": "5PM", "numbers": [22, 21], "prize": 4000.0},
   {"game": "3D", "date": "2026-07-24", "time": "5PM", "numbers": [4, 2, 0], "prize": 4500.0},
   {"game": "2D", "date": "2026-07-24", "time": "2PM", "numbers": [26, 12], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-24", "time": "2PM", "numbers": [1, 3, 8], "prize": 4500.0},
-  {"game": "2D", "date": "2026-07-23", "time": "9PM", "numbers": [17, 22], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-23", "time": "9PM", "numbers": [1, 0, 9], "prize": 4500.0},
-  {"game": "6D", "date": "2026-07-23", "time": "9PM", "numbers": [0, 3, 2, 6, 4, 2], "prize": 1477391.56},
-  {"game": "2D", "date": "2026-07-23", "time": "5PM", "numbers": [19, 31], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-23", "time": "5PM", "numbers": [2, 7, 4], "prize": 4500.0},
-  {"game": "2D", "date": "2026-07-23", "time": "2PM", "numbers": [4, 5], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-23", "time": "2PM", "numbers": [2, 8, 1], "prize": 4500.0}
+  {"game": "3D", "date": "2026-07-24", "time": "2PM", "numbers": [1, 3, 8], "prize": 4500.0}
  ]
 }
