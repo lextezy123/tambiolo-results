@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-23T19:13:36Z",
+ "updated": "2026-11-24T14:16:49Z",
  "draws": [
+  {"game": "2D", "date": "2026-11-24", "time": "9PM", "numbers": [17, 12], "prize": 4000.0},
+  {"game": "2D", "date": "2026-11-24", "time": "5PM", "numbers": [15, 28], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-24", "time": "5PM", "numbers": [1, 3, 7], "prize": 4500.0},
+  {"game": "2D", "date": "2026-11-24", "time": "2PM", "numbers": [24, 10], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-24", "time": "2PM", "numbers": [1, 1, 0], "prize": 4500.0},
   {"game": "2D", "date": "2026-11-23", "time": "9PM", "numbers": [19, 19], "prize": 4000.0},
   {"game": "3D", "date": "2026-11-23", "time": "9PM", "numbers": [2, 9, 7], "prize": 4500.0},
   {"game": "4D", "date": "2026-11-23", "time": "9PM", "numbers": [3, 5, 9, 5], "prize": 223436.0},
