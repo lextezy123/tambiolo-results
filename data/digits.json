@@ -1,7 +1,9 @@
 {
- "updated": "2026-11-24T14:16:49Z",
+ "updated": "2026-11-24T18:52:28Z",
  "draws": [
   {"game": "2D", "date": "2026-11-24", "time": "9PM", "numbers": [17, 12], "prize": 4000.0},
+  {"game": "3D", "date": "2026-11-24", "time": "9PM", "numbers": [1, 3, 0], "prize": 4500.0},
+  {"game": "6D", "date": "2026-11-24", "time": "9PM", "numbers": [4, 0, 3, 8, 9, 3], "prize": 763558.6},
   {"game": "2D", "date": "2026-11-24", "time": "5PM", "numbers": [15, 28], "prize": 4000.0},
   {"game": "3D", "date": "2026-11-24", "time": "5PM", "numbers": [1, 3, 7], "prize": 4500.0},
   {"game": "2D", "date": "2026-11-24", "time": "2PM", "numbers": [24, 10], "prize": 4000.0},
@@ -804,13 +806,6 @@
   {"game": "2D", "date": "2026-07-28", "time": "5PM", "numbers": [23, 5], "prize": 4000.0},
   {"game": "3D", "date": "2026-07-28", "time": "5PM", "numbers": [3, 2, 4], "prize": 4500.0},
   {"game": "2D", "date": "2026-07-28", "time": "2PM", "numbers": [30, 11], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-28", "time": "2PM", "numbers": [2, 1, 6], "prize": 4500.0},
-  {"game": "2D", "date": "2026-07-27", "time": "9PM", "numbers": [14, 25], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-27", "time": "9PM", "numbers": [3, 2, 6], "prize": 4500.0},
-  {"game": "4D", "date": "2026-07-27", "time": "9PM", "numbers": [9, 1, 9, 5], "prize": 46216.0},
-  {"game": "2D", "date": "2026-07-27", "time": "5PM", "numbers": [4, 12], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-27", "time": "5PM", "numbers": [5, 1, 3], "prize": 4500.0},
-  {"game": "2D", "date": "2026-07-27", "time": "2PM", "numbers": [29, 24], "prize": 4000.0},
-  {"game": "3D", "date": "2026-07-27", "time": "2PM", "numbers": [6, 1, 2], "prize": 4500.0}
+  {"game": "3D", "date": "2026-07-28", "time": "2PM", "numbers": [2, 1, 6], "prize": 4500.0}
  ]
 }
